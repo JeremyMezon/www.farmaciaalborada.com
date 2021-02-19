@@ -1,18 +1,40 @@
 @font-face {
-    font-family: horizon-type-regular;
-    src: url(../Fonts/horizon-type-acherusgrotesque-regular.otf);
-}
-
-@font-face {
-    font-family: Lato-Regular;
-    src: url(../Fonts/Lato-Regular.ttf);
+    font-family: Abel-Regular;
+    src: url(../fuentes/Abel-Regular.ttf);
 }
 
 @font-face {
     font-family: Lato-BlackItalic;
-    src: url(../Fonts/Lato-BlackItalic.ttf);
+    src: url(../fuentes/Lato-BlackItalic.ttf);
 }
 
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fuentes/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../fuentes/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fuentes/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fuentes/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: times;
+    src: url(../fuentes/times.ttf);
+}
+@font-face {
+    font-family: Aller_Rg;
+    src: url(../fuentes/Aller_Rg.ttf);
+}
 
 body {
     margin: 0;
@@ -26,7 +48,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: 15px !important;
-    margin-left: px !important;
+    margin-left: 15px !important;
 }
 
 
@@ -57,7 +79,34 @@ body {
     margin: 40px 0;
 }
 
+/* Sección Inicio */
+.secc-1 {
+    padding: 90px 0 90px;
+}
+.content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.item-flex-text-secc-1 {
+    width: 45%;
+    margin-left: 30px;
+}
 
+.secc-1 h1 {
+    color: #63AA50;
+    font-family: Abel-Regular;
+}
+.content-linea {
+    display: flex;
+}
+.line-secc-1 {
+    width: 10%;
+    height: 1px;
+    border-bottom: 1px solid#63AA50;
+    margin: 0px 5px 30px;
+}
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -175,17 +224,17 @@ a[aria-expanded="true"] {
 
 
 @media (max-width: 1300px) {
- 
+
 
 }
 
 @media (max-width: 1200px) {
-  
+
 
 }
 
 @media (max-width: 1024px) {
-  
+
 }
 
 
@@ -194,11 +243,11 @@ a[aria-expanded="true"] {
         display: none;
     }
 
- 
+
 }
 
 @media (max-width: 600px) {
-  
+
 
 }
 
