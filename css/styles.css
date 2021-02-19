@@ -255,3 +255,614 @@ a[aria-expanded="true"] {
 
 
 }
+
+/*
+
+------------------------------------------------------
+ESTILOS PARA SERVICO
+------------------------------------------------------
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@font-face {
+    font-family: Aller-Regular;
+    src: url(../fuentes/Aller_Rg.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fuentes/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-BlackItalic;
+    src: url(../fuentes/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: Abel-Regular;
+    src: url(../fuentes/Abel-Regular.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Abel', sans-serif;
+}
+
+p,li,a{
+    font-family: Aller-Regular;
+   color: #6B6B6B; 
+}
+
+/* Colores */
+
+.bg-verde{
+    background-color: #63AB50 !important;
+}
+
+.bg-verde-oscuro{
+    background-color: #20854D !important;
+}
+
+.bg-gris{
+    background-color: #F9F7F6;
+}
+
+.bg-negro{
+    background-color: #333333;
+}
+
+.text-verde{
+    color: #63AB50;
+}
+
+.text-verde-oscuro{
+    color: #20854D;
+}
+
+
+/* Colores */
+
+.fondo-oscuro-md{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+}
+
+.division{
+    width: 150px;
+    height: 2px;
+    display: flex;
+}
+
+.division span:nth-child(1){
+    display: block;
+    width: 30%;
+    height: 3px;
+    background-color: #20854D;
+}
+
+.division span:nth-child(2){
+    display: block;
+    margin-left: 2%;
+    width: 69%;
+    height: 3px;
+    background-color: #63AB50;
+}
+
+.seccion-recetario{
+    padding-top: 120px;
+}
+
+.caja-recetario{
+    margin-left: 20%;
+}
+
+.caja-recetario h3{
+    color: #63AB50;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.caja-recetario ul{
+    padding-inline-start: 3%;
+    margin-top: 20px;
+}
+
+.caja-recetario ul li{
+    font-size: 16px;
+}
+
+.cartera{
+    position: absolute;
+    width: fit-content;
+    bottom: 0;
+    right: 0;
+}
+
+.caja-lista-servicios h4{
+    text-transform: uppercase;
+    color: #63AB50;
+    font-weight: 300;
+    margin-bottom: 0px;
+    font-size: 21px;
+}
+
+.caja-lista-servicios ul{
+    padding-inline-start: 5%;
+    margin-top: 20px;
+}
+
+
+.caja-equipo-medico h3{
+    color: #63AB50;
+    font-weight: 300;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.caja-equipo-medico ul{
+    padding-inline-start: 3%;
+    margin-top: 20px;
+}
+
+.bg-equipo-medico{
+    background-image: url(../img/equipo-medico2.jpg);
+    background-size: cover;
+}
+
+.seccion-pandemia{
+    position: relative;
+    background-image: url(../img/pandemia.jpg);
+    background-size: cover;
+    background-position: right;
+    min-height: 400px;
+}
+
+.caja-pandemia h3{
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.caja-pandemia .division span:nth-child(1), .caja-pandemia .division span:nth-child(2){
+    background-color: white;
+}
+
+.caja-pandemia .division{
+    margin-bottom: 20px;
+}
+
+.caja-pandemia ul{
+    padding-inline-start: 3%;
+    margin-top: 20px;
+}
+
+.caja-pandemia ul li{
+    color: #cfcfcf;
+}
+
+.planes-medicos{
+    color: white;
+    text-align: center;
+    font-size: 48px;
+}
+
+.caja-paga{
+    margin-left: 22%;
+}
+
+.caja-paga h3{
+    margin-bottom: 0px;
+    color: #63AB50;
+}
+
+.caja-paga .division{
+    margin-bottom: 10px;
+}
+
+.caja-paga ol{
+    padding-inline-start: 3%;
+}
+
+.caja-paga p{
+    font-size: 21px;
+}
+
+.caja-paga p a{
+    color: #6B6B6B;
+}
+
+.caja-farmaceutico h3{
+    margin-bottom: 20px;
+    color: #63AB50;
+}
+
+.caja-farmaceutico ul{
+    padding-inline-start: 0%;
+    list-style-type: none;
+}
+
+.redes a{
+    color: #0063B0;
+}
+
+.facebook {
+    padding: 5px 8px;
+    border-radius: 300px;
+    background-color: #0063B0;
+    color: white;
+}
+
+@media (max-width: 1300px) {
+
+
+}
+
+@media (max-width: 1200px) {
+    
+    .caja-recetario{
+        margin-left: 20%;
+    }
+
+    .caja-recetario h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    
+    .caja-recetario ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+    
+    .caja-recetario ul li{
+        font-size: 14px;
+    }
+
+    .cartera img{
+        width: 330px;
+    }
+
+    .caja-lista-servicios ul li{
+        font-size: 14px;
+    }
+
+    .caja-equipo-medico h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    
+    .caja-equipo-medico ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+
+    .caja-equipo-medico ul li{
+        font-size: 14px;
+    }
+
+    .caja-paga{
+        margin-left: 10%;
+    }
+    
+    .caja-paga h3{
+        margin-bottom: 0px;
+        color: #63AB50;
+        font-size: 28px;
+    }
+    
+    .caja-paga .division{
+        margin-bottom: 10px;
+    }
+    
+    .caja-paga ol{
+        padding-inline-start: 3%;
+        padding-top: 10px ;
+    }
+
+    .caja-paga ol li{
+        font-size: 14px;
+    }
+    
+    .caja-paga p{
+        font-size: 16px;
+    }
+    
+    .caja-paga p a{
+        color: #6B6B6B;
+    }
+
+    .caja-farmaceutico h3{
+        margin-bottom: 20px;
+        color: #63AB50;
+        font-size: 28px;
+    }
+    
+    .caja-farmaceutico ul{
+        padding-inline-start: 0%;
+        list-style-type: none;
+    }
+
+    .caja-farmaceutico ul li{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+
+@media (max-width: 992px) {
+    .ocultar {
+        display: none;
+    }
+
+    .fondo-oscuro-md{
+        display: block;
+    }
+
+    .seccion-recetario{
+        padding-top: 60px;
+    }
+
+    .caja-recetario{
+        margin-left: 5%;
+    }
+
+    .caja-recetario h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: 28px;
+    }
+    
+    .caja-recetario ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+    
+    .caja-recetario ul li{
+        font-size: 14px;
+    }
+
+    .cartera img{
+        width: 330px;
+    }
+
+    .caja-lista-servicios ul li{
+        font-size: 14px;
+    }
+
+    .caja-equipo-medico h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    
+    .caja-equipo-medico ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+
+    .caja-equipo-medico ul li{
+        font-size: 14px;
+    }
+
+    .planes-medicos{
+        color: white;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .caja-paga{
+        margin-left: 10%;
+    }
+    
+    .caja-paga h3{
+        margin-bottom: 0px;
+        color: #63AB50;
+        font-size: 24px;
+    }
+    
+    .caja-paga .division{
+        margin-bottom: 10px;
+    }
+    
+    .caja-paga ol{
+        padding-inline-start: 3%;
+        padding-top: 10px ;
+    }
+
+    .caja-paga ol li{
+        font-size: 10px;
+    }
+    
+    .caja-paga p{
+        font-size: 14px;
+    }
+    
+    .caja-paga p a{
+        color: #6B6B6B;
+    }
+
+    .caja-farmaceutico{
+        padding: 20px 0;
+    }
+
+    .caja-farmaceutico h3{
+        margin-bottom: 20px;
+        color: #63AB50;
+        font-size: 24px;
+    }
+    
+    .caja-farmaceutico ul{
+        padding-inline-start: 0%;
+        list-style-type: none;
+    }
+
+    .caja-farmaceutico ul li{
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .cartera{
+        position: relative;
+        width: fit-content;
+        bottom: 0;
+        right: 0;
+    }
+
+    .fondo-oscuro-md{
+        display: block;
+    }
+
+    .seccion-recetario{
+        padding-top: 30px;
+    }
+
+    .caja-recetario{
+        margin-left: 1%;
+    }
+
+    .caja-recetario h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        font-size: 21px;
+    }
+    
+    .caja-recetario ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+    
+    .caja-recetario ul li{
+        font-size: 10px;
+    }
+
+    .caja-lista-servicios ul li{
+        font-size: 10px;
+    }
+
+    .caja-equipo-medico h3{
+        color: #63AB50;
+        font-weight: 300;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        font-size: 21px;
+    }
+    
+    .caja-equipo-medico ul{
+        padding-inline-start: 3%;
+        margin-top: 20px;
+    }
+
+    .caja-equipo-medico ul li{
+        font-size: 10px;
+    }
+
+    .caja-pandemia h3{
+        color: white;
+        font-weight: 300;
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+
+    .caja-pandemia ul li{
+        font-size: 10px;
+    }
+
+    .planes-medicos{
+        color: white;
+        text-align: center;
+        font-size: 21px;
+    }
+
+
+    .caja-paga{
+        margin-left: 1%;
+    }
+    
+    .caja-paga h3{
+        margin-bottom: 0px;
+        color: #63AB50;
+        font-size: 21px;
+    }
+    
+    .caja-paga .division{
+        margin-bottom: 10px;
+    }
+    
+    .caja-paga ol{
+        padding-inline-start: 3%;
+        padding-top: 10px ;
+    }
+
+    .caja-paga ol li{
+        font-size: 10px;
+    }
+    
+    .caja-paga p{
+        font-size: 12px;
+    }
+    
+    .caja-paga p a{
+        color: #6B6B6B;
+    }
+
+    .caja-farmaceutico{
+        padding: 20px 0;
+    }
+
+    .caja-farmaceutico h3{
+        margin-bottom: 20px;
+        color: #63AB50;
+        font-size: 21px;
+    }
+    
+    .caja-farmaceutico ul{
+        padding-inline-start: 0%;
+        list-style-type: none;
+    }
+
+    .caja-farmaceutico ul li{
+        font-size: 10px;
+    }
+
+    .caja-footer p{
+        font-size: 10px;
+    }
+
+    .copyright img{
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+
+}
